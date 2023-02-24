@@ -8,6 +8,29 @@
 import Foundation
 import CoreML
 import Vision
+import Cocoa
+
+public typealias UIImage = NSImage
+
+// Step 2: You might want to add these APIs that UIImage has but NSImage doesn't.
+public extension NSImage {
+    var cgImage: CGImage? {
+        var proposedRect = CGRect(origin: .zero, size: size)
+
+        return cgImage(forProposedRect: &proposedRect,
+                       context: nil,
+                       hints: nil)
+    }
+
+    /*convenience init?(named name: String) {
+        self.init(named: Name(name))
+    }*/
+    
+    var ciImage: CIImage? {
+        return CIImage(cgImage: cgImage!)
+    }
+}
+
 
 @available(iOS 12.0, *)
 public class NSFWDetector {

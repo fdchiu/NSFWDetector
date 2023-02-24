@@ -14,6 +14,7 @@ Lightweight Library for scanning images for NSFW (Not Safe For Work) content.
   s.source           = { :git => 'https://github.com/lovoo/NSFWDetector.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.0'
+  s.osx.deployment_target = '10.15'
 
   s.pod_target_xcconfig = { 'COREML_CODEGEN_LANGUAGE' => 'Swift' }
 
