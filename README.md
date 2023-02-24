@@ -4,6 +4,8 @@
 [![License](https://img.shields.io/cocoapods/l/NSFWDetector.svg?style=flat)](https://cocoapods.org/pods/NSFWDetector)
 [![Platform](https://img.shields.io/cocoapods/p/NSFWDetector.svg?style=flat)](https://cocoapods.org/pods/NSFWDetector)
 
+This project is forked from the original NSFWDetector repo. I added macOS support.
+ 
 NSFWDetector is a small (**17 kB**) CoreML Model to scan images for nudity. It was trained using CreateML to distinguish between porn/nudity and appropriate pictures. With the main focus on distinguishing between instagram model like pictures and porn.
 
 ## Usage
