@@ -8,6 +8,8 @@
 import Foundation
 import CoreML
 import Vision
+
+#if os(macOS)
 import Cocoa
 
 public typealias UIImage = NSImage
@@ -30,7 +32,7 @@ public extension NSImage {
         return CIImage(cgImage: cgImage!)
     }
 }
-
+#endif
 
 @available(iOS 12.0, *)
 public class NSFWDetector {
